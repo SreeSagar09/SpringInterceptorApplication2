@@ -1,0 +1,15 @@
+A Simple Program to show how to configure Interceptor in Spring Application with AsyncHandlerInterceptor interface:
+Programs:
+* AppConfig.java
+* AppInit.java
+* ActionHandlerController.java
+* ActionHandlerInterceptor.java
+Notes:
+* The AsyncHandlerInterceptor is sub interface of HandlerInterceptor interface.
+* The AsyncHandlerInterceptor interface has one default method is: default void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception
+* And the remaining methods are inherited from HandlerInterceptor interface.
+Output:
+From preHandle method in ActionHandlerInterceptor class
+From actionHandler1 method in ActionHandlerController class
+From postHandle method in ActionHandlerInterceptor class
+From afterCompletion method in ActionHandlerInterceptor class
