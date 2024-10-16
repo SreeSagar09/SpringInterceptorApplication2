@@ -9,6 +9,7 @@ Notes:
 * The AsyncHandlerInterceptor interface has one default method is: default void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception
 * And the remaining methods are inherited from HandlerInterceptor interface.
 Output:
+console output for this url: http://localhost:8080/SpringInterceptorApplication2/action/actionHandler1
 From preHandle method in ActionHandlerInterceptor class
 From actionHandler1 method in ActionHandlerController class
 From postHandle method in ActionHandlerInterceptor class
